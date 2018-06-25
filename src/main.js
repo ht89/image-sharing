@@ -7,9 +7,9 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 // import imagesReducer from './reducers/images';
 
-import ImagesList from './components/ImagesList.js';
-// import MyImages from './components/MyImages.js';
-// import Camera from './components/Camera.js';
+import ImagesList from './screens/ImagesList.js';
+// import MyImages from './screens/MyImages.js';
+// import Camera from './screens/Camera.js';
 
 let Navigator;
 
