@@ -9,7 +9,7 @@ import { Icon } from 'native-base';
 
 import Header from '../components/Header';
 import Gallery from '../components/Gallery';
-import ActivityIndicator from '../components/ActivityIndicator';
+import CustomActivityIndicator from '../components/ActivityIndicator';
 
 class ImagesList extends React.Component {
   static navigationOptions = {
@@ -39,7 +39,7 @@ class ImagesList extends React.Component {
         <ScrollView ref={(scrollable) => {
           this.scrollable = scrollable;
         }}>
-          {this.props.addingImage && <ActivityIndicator message='Adding image' />}
+          {this.props.addingImage && <CustomActivityIndicator message='Adding image' />}
           <Gallery imageList={this.props.images} loading={this.props.fetchingImages} />
         </ScrollView>
       </View>
