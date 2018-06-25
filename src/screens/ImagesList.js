@@ -39,7 +39,7 @@ class ImagesList extends React.Component {
         <ScrollView ref={(scrollable) => {
           this.scrollable = scrollable;
         }}>
-          { this.props.addingImage && <ActivityIndicator message='Adding image'/> }
+          {this.props.addingImage && <ActivityIndicator message='Adding image' />}
           <Gallery imageList={this.props.images} loading={this.props.fetchingImages} />
         </ScrollView>
       </View>

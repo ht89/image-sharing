@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
   logo: {
     height: 25,
     resizeMode: 'contain',
-    margin: 10
   },
   cameraIcon: {
     fontSize: 30,
