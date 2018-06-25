@@ -11,7 +11,7 @@ import Header from '../components/Header';
 import Gallery from '../components/Gallery';
 import ActivityIndicator from '../components/ActivityIndicator';
 
-export default class ImagesList extends React.Component {
+class ImagesList extends React.Component {
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
       <Icon name="list" style={{ fontSize: 40, color: tintColor }} />
@@ -59,4 +59,4 @@ function mapStateActionsToProps(dispatch) {
   return bindActionCreators(Actions, dispatch);
 }
 
-export default connect(mapStateToProps, mapStateActionToProps)(ImagesList);
+export default connect(mapStateToProps, mapStateActionsToProps)(ImagesList);
