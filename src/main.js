@@ -1,23 +1,23 @@
 import React from 'react';
-import { DrawNavigator, TabNavigator } from 'react-navigation';
+import { DrawerNavigator, TabNavigator } from 'react-navigation';
 import { Platform } from 'react-native';
 
 import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import imagesReducer from './reducers/images';
+// import imagesReducer from './reducers/images';
 
-import ImagesList from './screens/ImagesList.js';
-import MyImages from './screens/MyImages.js';
-import Camera from './screens/Camera.js';
+import ImagesList from './components/ImagesList.js';
+// import MyImages from './components/MyImages.js';
+// import Camera from './components/Camera.js';
 
 let Navigator;
 
 if (Platform.OS === 'ios') {
   Navigator = TabNavigator({
     ImagesList: { screen: ImagesList },
-    MyImages: { screen: MyImages }, 
-    Camera: { screen: Camera }
+    // MyImages: { screen: MyImages }, 
+    // Camera: { screen: Camera }
   }, {
     tabBarOptions: {
       inactiveTintColor: '#aaa',
@@ -28,8 +28,8 @@ if (Platform.OS === 'ios') {
 } else {
   Navigator = DrawerNavigator({
     ImagesList: { screen: ImagesList },
-    MyImages: { screen: MyImages },
-    Camera: { screen: Camera }
+    // MyImages: { screen: MyImages },
+    // Camera: { screen: Camera }
   });
 }
 
