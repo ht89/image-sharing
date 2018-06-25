@@ -7,7 +7,7 @@ import {
   Button,
   Container,
   Content
-} from 'react-base';
+} from 'native-base';
 import {
   Image,
   Dimensions,

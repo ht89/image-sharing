@@ -11,7 +11,7 @@ import Header from '../components/Header';
 import Gallery from '../components/Gallery';
 import ActivityIndicator from '../components/ActivityIndicator';
 
-class ImagesList extends React.Component {
+export default class ImagesList extends React.Component {
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
       <Icon name="list" style={{ fontSize: 40, color: tintColor }} />

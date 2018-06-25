@@ -5,7 +5,7 @@ import { Platform } from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-// import imagesReducer from './reducers/images';
+import imagesReducer from './reducers/images';
 
 import ImagesList from './screens/ImagesList.js';
 // import MyImages from './screens/MyImages.js';
