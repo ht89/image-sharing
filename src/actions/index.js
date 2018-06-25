@@ -13,10 +13,12 @@ export function fetchImages(userId = null) {
   }
 
   return dispatch => {
+    // let Redux know we're ready to make a network request
     dispatch({ type: actionName });
 
     api.fetchImages(userId)
       .then(images => {
+        // let Redux know the network request has been successful and send along returned data
         dispatch({
           type: actionNameSuccess,
           images
@@ -33,6 +35,7 @@ export function fetchImages(userId = null) {
 
 export function addImage(data = null) {
   return dispatch => {
+    // let Redux know we're ready to make a network request
     dispatch({ type: 'ADD_IMAGE' });
 
     api.addImage()
