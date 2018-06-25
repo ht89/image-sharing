@@ -15,7 +15,7 @@ export default class Header extends React.Component {
           Platform.OS === 'android' &&
           <Button transparent 
             onPress={this.props.onMenuButtonPress}>
-            <Icon android='md-menu' style={styles.menuIcon} />
+            <Icon name='menu' style={styles.menuIcon} />
           </Button>
         }
         
@@ -35,7 +35,6 @@ export default class Header extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 20,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',

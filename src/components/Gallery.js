@@ -40,13 +40,12 @@ export default class Gallery extends React.Component {
                   }}>
 
                   <View style={styles.user}>
-                    <Image
-                      source={{ uri: image.user.pic }}
+                    <Image source={image.user.pic}
                       style={styles.userPic} />
                     <Text style={{ fontWeight: 'bold' }}>{image.user.name}</Text>
                   </View>
 
-                  <Image source={{ uri: image.src }}
+                  <Image source={image.src}
                     style={styles.image} />
 
                   <Button

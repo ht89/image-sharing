@@ -10,25 +10,25 @@ export default {
     const images = [
       {
         id: 1,
-        src: '../../img/pexels-photo-1181804.jpeg',
+        src: require('../../img/pexels-photo-1181804.jpeg'),
         user: {
-          pic: '../../img/pexels-photo-119730.jpeg',
+          pic: require('../../img/pexels-photo-119730.jpeg'),
           name: 'Naia'
         }
       },
       {
         id: 2,
-        src: '../../img/pexels-photo-1182252.jpeg',
+        src: require('../../img/pexels-photo-1182252.jpeg'),
         user: {
-          pic: '../../img/pexels-photo-587015.jpeg',
+          pic: require('../../img/pexels-photo-587015.jpeg'),
           name: 'Mike_1982'
         }
       },
       {
         id: 5,
-        src: '../../img/pexels-photo-1182971.jpeg',
+        src: require('../../img/pexels-photo-1182971.jpeg'),
         user: {
-          pic: '../../img/pexels-photo-878979.jpeg',
+          pic: require('../../img/pexels-photo-878979.jpeg'),
           name: 'Sharer1'
         }
       }
