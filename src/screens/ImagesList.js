@@ -33,7 +33,7 @@ class ImagesList extends React.Component {
     return (
       <View style={{ flex: 1 }}>
         <Header
-          onMenuButtonPress={() => this.props.navigation.navigate('DrawerOpen')}
+          onMenuButtonPress={() => this.props.navigation.openDrawer()}
           onCameraButtonPress={() => this.props.navigation.navigate('Camera')} />
 
         <ScrollView ref={(scrollable) => {
